@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>malu.codess</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="ellipse-1"></div>
+        <nav>
+            <ul>
+                <li><a href="#">sobre mim</a></li>
+                <li><a href="#">projetos</a></li>
+                <li><a href="#">skills</a></li>
+                <li><a href="#">contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container-main">
+            <section class="card-menu">
+                <img src="/assets/images/brilho-emoji.png" alt="Ícone" class="card-icon">
+                <span class="rotated-text">Bem-vindo (a) ao meu portfólio</span>
+                <p>Sou Maria Luiza, graduanda em Ciência da Computação (3° período) com foco em Desenvolvimento de Software.</p>
+            </section>
+            <img src="/assets/images/malu-cafe.png" alt="Avatar de Maria Luiza tomando café">
+        </div>
+    </main>
+    <footer></footer>
+    <script>
+        let lastScrollTop = 0;
+        const nav = document.querySelector('nav');
+
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop && scrollTop > nav.offsetHeight) {
+                nav.classList.add('hide-nav'); // Rolar para baixo -> esconde
+            } else {
+                nav.classList.remove('hide-nav'); // Rolar para cima -> mostra
+            }
+
+            if (scrollTop > 0) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        });
+    </script>
+</body>
+</html>
