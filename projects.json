@@ -1,47 +1,56 @@
 [
     {
-        "title": "Nome do Projeto 1",
-        "subtitle": "Descrição do projeto 1",
-        "image": "assets/images/malu-cafe.png"
+        "title": "SOS Cidadão Digital",
+        "subtitle": "Seu propósito é transformar o pânico das crises online em solução imediata. O projeto utiliza o modelo de busca e cards para fornecer Protocolos de Ação Críticos.",
+        "image": "assets/images/foto-sos-cidadao-digital.png",
+        "decoration": "assets/images/sos-emoji.png"
     },
     {
-        "title": "Nome do Projeto 2",
-        "subtitle": "Descrição do projeto 2",
-        "image": "assets/images/malu-cafe.png"
+        "title": "Make4You Cosméticos",
+        "subtitle": "Inspirados pela crença de que a verdadeira elegância reside na confiança e autenticidade, a marca fictícia Make4You cria cosméticos de alta performance.",
+        "image": "assets/images/foto-make4you.png",
+        "decoration": "assets/images/lipstick-emoji.png"
     },
     {
-        "title": "Nome do Projeto 3",
+        "title": "Wikipedia 2004 Clone",
         "subtitle": "Descrição do projeto 3",
-        "image": "assets/images/malu-cafe.png"
+        "image": "assets/images/foto-wikipedia.png",
+        "decoration": "assets/images/Globe-emoji.png"
     },
     {
         "title": "Nome do Projeto 4",
         "subtitle": "Descrição do projeto 4",
-        "image": "assets/images/malu-cafe.png"
+        "image": "assets/images/malu-cafe.png",
+        "decoration": "assets/images/brilho-emoji.png"
     },
     {
         "title": "Nome do Projeto 5",
         "subtitle": "Descrição do projeto 5",
-        "image": "assets/images/malu-cafe.png"
+        "image": "assets/images/malu-cafe.png",
+        "decoration": "assets/images/brilho-emoji.png"
     },
     {
         "title": "Nome do Projeto 6",
         "subtitle": "Descrição do projeto 6",
-        "image": "assets/images/malu-cafe.png"
+        "image": "assets/images/malu-cafe.png",
+        "decoration": "assets/images/brilho-emoji.png"
     },
     {
         "title": "Nome do Projeto 7",
         "subtitle": "Descrição do projeto 7",
-        "image": "assets/images/malu-cafe.png"
+        "image": "assets/images/malu-cafe.png",
+        "decoration": "assets/images/brilho-emoji.png"
     },
     {
         "title": "Nome do Projeto 8",
         "subtitle": "Descrição do projeto 8",
-        "image": "assets/images/malu-cafe.png"
+        "image": "assets/images/malu-cafe.png",
+        "decoration": "assets/images/brilho-emoji.png"
     },
     {
         "title": "Nome do Projeto 9",
         "subtitle": "Descrição do projeto 9",
-        "image": "assets/images/malu-cafe.png"
+        "image": "assets/images/malu-cafe.png",
+        "decoration": "assets/images/brilho-emoji.png"
     }
 ]

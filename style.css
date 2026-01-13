@@ -182,7 +182,7 @@ padding: 0 40px;
 .rotated-title {
     position: absolute;
     bottom: -200px;
-    right: 0;
+    right: -100px;
     transform: rotate(5.28deg);
     color: var(--color-orange);
     background-color: var(--color-cards);
@@ -195,20 +195,22 @@ padding: 0 40px;
 
 .projects-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     flex-wrap: nowrap;
     justify-content: flex-start;
     gap: 60px;
-    margin-top: 250px; /* Espaço para não sobrepor o título Projetos */
-    margin-top: 434px;
+    margin-top: 416px;
     margin-bottom: 100px;
-    max-width: 1600px; /* Limite para não ficar muito espalhado em telas grandes */
-    margin-left: auto;
-    margin-right: auto;
     width: 100%;
     padding-left: 140px;
+    padding-top: 30px;
+    padding-right: 40px;
+    padding-bottom: 40px;
     overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.projects-container::-webkit-scrollbar {
+    display: none;
 }
 
 .project-card {
@@ -221,6 +223,7 @@ padding: 0 40px;
     flex-direction: column;
     align-items: flex-start;
     flex-shrink: 0;
+    box-shadow: 0px 0px 11px 2px rgba(0, 0, 0, 0.25);
 }
 
 .project-card h3 {
@@ -234,23 +237,25 @@ padding: 0 40px;
 .project-card h4 {
     margin-top: 10px;
     margin-left: 40px;
+    margin-right: 40px;
     color: var(--color-black);
-    font-weight: 600;
-    font-size: 16px;
+    font-weight: 500;
+    font-size: 14.6px;
 }
 
 .project-image {
-    margin-top: 16px;
+    margin-top: 20px;
     margin-left: 46px;
-    width: 300px; /* Ajustado para caber no layout */
+    width: 360px; 
     height: 150px;
-    object-fit: cover;
+    object-fit: fill;
     border-radius: 20px;
 }
 
 .btn-more {
-    margin-top: 19px;
-    margin-left: 251px;
+    margin-top: 20px;
+    margin-left: 274px;
+    margin-bottom: 0;
     background-color: var(--color-green);
     color: var(--color-black);
     font-weight: 700;
@@ -258,6 +263,13 @@ padding: 0 40px;
     padding: 10px 24px;
     text-decoration: none;
     display: inline-block;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-more:hover {
+    transform: scale(1.05);
+    background-color: var(--color-green2);
+    box-shadow: 0 4px 15px #00001a94;
 }
 
 .corner-decoration {
