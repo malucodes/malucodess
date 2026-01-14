@@ -1,6 +1,6 @@
 :root{
     --color-black: #000;
-    --color-menu: rgba(0, 0, 0, 0.700);
+    --color-menu: #000000b3;
     --color-background: #FCFDEE;
     --color-yellow: #FFC900;
     --color-green: #D5DD3F;
@@ -14,6 +14,8 @@
 
  html {
     background-color: var(--color-background);
+    scroll-behavior: smooth;
+    scroll-padding-top: 20px;
  }
 
  * {
@@ -55,6 +57,20 @@
         transform: translateX(-50%);
         border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     }
+}
+
+.ellipse-project {
+    width: 800px;
+    height: 500px;
+    position: absolute;
+    top: -450px;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: blur(350px);
+    border-radius: 50%;
+    background-color: var(--color-yellow);
+    z-index: -1;
+    animation: wave 8s infinite ease-in-out;
 }
 
  nav {
@@ -193,6 +209,114 @@ padding: 0 40px;
     font-size: 32px;
 }
 
+.rotated-title2 {
+    position: absolute;
+    bottom: -940px;
+    left: -100px;
+    transform: rotate(-5.28deg);
+    color: var(--color-orange);
+    background-color: var(--color-cards);
+    padding: 12px 54px;
+    border: 3px solid var(--color-orange);
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.info-cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    position: absolute;
+    top: 1468px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.info-card {
+    width: 401px;
+    height: 140px;
+    background-color: var(--color-cards);
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+    transition: height 0.4s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    box-shadow: 0px 0px 11px 2px rgba(0, 0, 0, 0.15);
+}
+
+.info-card:hover {
+    box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.2);
+}
+
+.info-card.expanded {
+    height: 480px; /* 140px + 340px */
+}
+
+.info-card-icon {
+    position: absolute;
+    top: 42px;
+    left: 40px;
+    width: 54px;
+    height: 54px;
+}
+
+.info-card-title {
+    position: absolute;
+    top: 69px;
+    left: 114px; /* 40px (left) + 54px (img) + 20px (gap) */
+    transform: translateY(-50%);
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--color-black);
+}
+
+.info-card-action {
+    position: absolute;
+    top: 44px;
+    right: 40px;
+    width: 50px; /* Tamanho estimado */
+    transition: transform 0.4s ease;
+}
+
+.info-card.expanded .info-card-action {
+    transform: rotate(44deg);
+}
+
+.info-topics-container {
+    position: absolute;
+    top: 146px; /* 42px (top img) + 54px (height img) + 50px (gap) */
+    left: 40px;
+    right: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    opacity: 0;
+    transition: opacity 0.3s ease 0.1s;
+}
+
+.info-card.expanded .info-topics-container {
+    opacity: 1;
+}
+
+.topic-tag {
+    padding: 8px 26px;
+    border-radius: 100px;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: transparent;
+    color: var(--color-black);
+    text-align: center;
+    border-style: solid;
+    border-width: 3px;
+    transition: transform 0.2s ease;
+}
+
+.topic-tag:hover {
+    transform: translateY(-5px);
+}
+
 .projects-container {
     display: flex;
     flex-wrap: nowrap;
@@ -232,6 +356,10 @@ padding: 0 40px;
     color: var(--color-black);
     font-weight: 700;
     font-size: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 374px;
 }
 
 .project-card h4 {
@@ -254,7 +382,7 @@ padding: 0 40px;
 
 .btn-more {
     margin-top: 20px;
-    margin-left: 274px;
+    margin-left: 254px;
     margin-bottom: 0;
     background-color: var(--color-green);
     color: var(--color-black);
@@ -262,7 +390,9 @@ padding: 0 40px;
     border-radius: 100px;
     padding: 10px 24px;
     text-decoration: none;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
     transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -279,4 +409,314 @@ padding: 0 40px;
     width: 75px;
     height: 75px;
     transform: rotate(13.76deg);
+}
+
+#contato {
+    top: 1788px;
+    bottom: auto;
+    right: -100px;
+    transition: top 0.4s ease;
+}
+
+#contato.moved-down {
+    top: 2128px;
+}
+
+.bastidores-container {
+    position: absolute;
+    top: 1936px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: flex-start;
+    gap: 36px;
+    width: max-content;
+    transition: top 0.4s ease;
+}
+
+.bastidores-container.moved-down {
+    top: 2276px;
+}
+
+.bastidores-image {
+    height: 416px;
+    width: 340px;
+    object-fit: cover;
+}
+
+.bastidores-card {
+    width: 454px;
+    height: 416px;
+    background-color: var(--color-cards);
+    border-radius: 50px;
+    box-shadow: 0px 0px 11px 2px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+}
+
+.bastidores-card h3 {
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 190px;
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--color-black);
+}
+
+.bastidores-grid {
+    margin-top: 40px;
+    margin-left: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 48px);
+    grid-template-rows: repeat(2, 48px);
+    column-gap: 80px;
+    row-gap: 40px;
+}
+
+.bastidores-grid img {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+footer {
+    position: absolute;
+    top: 2562px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--color-black);
+    font-weight: 500;
+    padding-bottom: 32px;
+    white-space: nowrap;
+    transition: top 0.4s ease;
+}
+
+footer.moved-down {
+    top: 2902px;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* --- Estilos da Página de Projetos (project.html) --- */
+
+.project-page-body {
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.back-button {
+    position: absolute;
+    top: 100px;
+    left: 124px;
+    cursor: pointer;
+    z-index: 20;
+    opacity: 0;
+    animation: fadeInUp 0.6s ease-out 0.1s forwards;
+}
+
+.project-detail-container {
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.project-left-col {
+    margin-left: 124px;
+    margin-top: 180px;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-image-wrapper {
+    position: relative;
+    width: 602px;
+    height: 342px;
+    opacity: 0;
+    animation: fadeInUp 0.6s ease-out 0.2s forwards;
+}
+
+#project-img {
+    width: 602px;
+    height: 342px;
+    border-radius: 50px;
+    object-fit: cover;
+    box-shadow: 0px 0px 11px 2px rgba(0, 0, 0, 0.15);
+}
+
+#project-decoration {
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    width: 75px;
+    height: 75px;
+    transform: rotate(5.28deg);
+}
+
+.tech-section {
+    margin-top: 50px;
+    margin-left: 16px; /* 140px total left - 124px container left = 16px relative */
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    animation: fadeInUp 0.6s ease-out 0.4s forwards;
+    max-width: 604px; /* Garante a distância de 54px do card (798px - 140px - 54px) */
+}
+
+.tech-section h3 {
+    font-weight: 600;
+    font-size: 20px; /* Estimado */
+    color: var(--color-black);
+    margin-right: 26px;
+}
+
+.tech-list {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+/* Card da Direita */
+.project-right-col {
+    position: absolute;
+    top: 180px;
+    left: 798px; /* 124px (left) + 602px (img) + 72px (gap) */
+    display: flex;
+    flex-direction: column;
+    filter: drop-shadow(0px 0px 11px rgba(0, 0, 0, 0.15));
+}
+
+.project-info-header {
+    width: 380px;
+    height: 104px;
+    background-color: var(--color-cards);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    position: relative;
+    /* O layout pede alinhamento específico à direita da tela, mas como temos um fluxo da esquerda,
+       vamos manter relativo ao container da esquerda para garantir a distância de 72px */
+    opacity: 0;
+    animation: fadeInUp 0.6s ease-out 0.3s forwards;
+}
+
+.project-info-header h1 {
+    position: absolute;
+    top: 34px;
+    left: 42px;
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--color-orange);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+    max-width: 296px;
+    mask-image: linear-gradient(90deg, transparent, #000 10px, #000 calc(100% - 10px), transparent);
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 10px, #000 calc(100% - 10px), transparent);
+}
+
+.project-info-header h1 span {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll-title 4s linear infinite alternate;
+}
+
+@keyframes scroll-title {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(min(0px, calc(296px - 100%))); }
+}
+
+.project-info-body {
+    width: 514px;
+    height: 485px;
+    background-color: var(--color-cards);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px; /* Para completar o visual do header menor */
+    position: relative;
+    margin-top: -1px; /* Evitar linha branca */
+    opacity: 0;
+    animation: fadeInUp 0.6s ease-out 0.5s forwards;
+}
+
+.project-description {
+    margin-top: 46px;
+    margin-left: 38px;
+    margin-right: 40px;
+    margin-bottom: 50px;
+    max-height: 200px;
+    overflow-y: auto;
+    font-weight: 500;
+    color: var(--color-black);
+    line-height: 1.5;
+}
+
+.project-buttons {
+    position: absolute;
+    bottom: 46px;
+    left: 42px;
+    display: flex;
+    gap: 16px;
+}
+
+.btn-project {
+    padding: 10px 58px;
+    border-radius: 100px;
+    font-weight: 600;
+    color: var(--color-black);
+    text-decoration: none;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.btn-project:hover {
+    transform: scale(1.05);
+}
+
+.btn-site {
+    background-color: var(--color-yellow2);
+}
+
+.btn-code {
+    background-color: var(--color-green2);
+}
+
+.nav-arrow {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 60px;
+    background-color: var(--color-cards);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0px 0px 11px 2px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    z-index: 100;
+    color: var(--color-black);
+}
+
+.nav-arrow:hover {
+    transform: translateY(-50%) scale(1.1);
+    background-color: var(--color-yellow);
+}
+
+.left-arrow {
+    left: 40px;
+}
+
+.right-arrow {
+    right: 40px;
 }

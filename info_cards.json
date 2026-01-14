@@ -1,0 +1,31 @@
+[
+    {
+        "title": "Programação",
+        "icon": "assets/images/Laptop-emoji.png",
+        "action_icon": "assets/images/Plus-emoji.png",
+        "topics": [
+            {"text": "HTML5", "color": "#F78012"},
+            {"text": "CSS3", "color": "#F78012"},
+            {"text": "JavaScript", "color": "#F78012"},
+            {"text": "Git / Github", "color": "#F78012"},
+            {"text": "Python", "color": "#0C090870"},
+            {"text": "C", "color": "#0C090870"},
+            {"text": "Swift", "color": "#0C090870"},
+            {"text": "SQL", "color": "#0C090870"},
+            {"text": "AWS", "color": "#0C090870"}
+        ]
+    },
+    {
+        "title": "Design & Outros",
+        "icon": "assets/images/Paintbrush-emoji.png",
+        "action_icon": "assets/images/Plus-emoji.png",
+        "topics": [
+            {"text": "Figma", "color": "#F78012"},
+            {"text": "UX/UI Design", "color": "#F78012"},
+            {"text": "Engenharia de Prompt", "color": "#F8C400"},
+            {"text": "IA Generativa", "color": "#F8C400"},
+            {"text": "Scrum", "color": "#C0CA0F"},
+            {"text": "Kanban", "color": "#C0CA0F"}
+        ]
+    }
+]

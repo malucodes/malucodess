@@ -3,54 +3,100 @@
         "title": "SOS Cidadão Digital",
         "subtitle": "Seu propósito é transformar o pânico das crises online em solução imediata. O projeto utiliza o modelo de busca e cards para fornecer Protocolos de Ação Críticos.",
         "image": "assets/images/foto-sos-cidadao-digital.png",
-        "decoration": "assets/images/sos-emoji.png"
+        "decoration": "assets/images/sos-emoji.png",
+        "description": "O SOS Cidadão Digital é uma plataforma desenvolvida para auxiliar pessoas em situações de crise digital. Com uma interface intuitiva baseada em cards e busca rápida, o usuário encontra protocolos de ação imediatos para situações como vazamento de dados, assédio virtual e golpes online.",
+        "technologies": ["HTML5", "CSS3", "JavaScript", "IA Generativa"],
+        "site_link": "https://malucodes.github.io/SOS-Cidadao-Digital/",
+        "code_link": "https://github.com/malucodes/SOS-Cidadao-Digital.git"
     },
     {
         "title": "Make4You Cosméticos",
         "subtitle": "Inspirados pela crença de que a verdadeira elegância reside na confiança e autenticidade, a marca fictícia Make4You cria cosméticos de alta performance.",
         "image": "assets/images/foto-make4you.png",
-        "decoration": "assets/images/lipstick-emoji.png"
+        "decoration": "assets/images/lipstick-emoji.png",
+        "description": "E-commerce fictício focado em cosméticos de alta performance. O projeto explora conceitos de design responsivo, grid layout e uma estética moderna para destacar os produtos e a identidade da marca.",
+        "technologies": ["Figma", "HTML5", "CSS3"],
+        "site_link": "https://malucodes.github.io/Make4You-Cosmeticos/",
+        "code_link": "https://github.com/malucodes/Make4You-Cosmeticos.git"
     },
     {
         "title": "Wikipedia 2004 Clone",
-        "subtitle": "Descrição do projeto 3",
+        "subtitle": "Este projeto é uma recriação nostálgica do layout clássico da Wikipédia utilizado por volta de 2004, resgatando a estética minimalista da \"Web 1.0\".",
         "image": "assets/images/foto-wikipedia.png",
-        "decoration": "assets/images/Globe-emoji.png"
+        "decoration": "assets/images/Globe-emoji.png",
+        "description": "Uma viagem no tempo para a Web 1.0. Este clone recria fielmente a estrutura de tabelas, fontes serifadas e o minimalismo funcional que caracterizava a Wikipédia em 2004.",
+        "technologies": ["HTML5", "CSS3"],
+        "site_link": "https://malucodes.github.io/Wikipedia-Clone/",
+        "code_link": "https://github.com/malucodes/Wikipedia-Clone.git"
     },
     {
-        "title": "Nome do Projeto 4",
-        "subtitle": "Descrição do projeto 4",
+        "title": "Landing Page DIO",
+        "subtitle": "Este projeto é uma landing page moderna da Digital Innovation One (DIO). Aplica-se conceitos fundamentais de front-end para criar uma interface responsiva e atraente.",
         "image": "assets/images/malu-cafe.png",
-        "decoration": "assets/images/brilho-emoji.png"
+        "decoration": "assets/images/Closed-book-emoji.png",
+        "description": "Landing page desenvolvida como parte do bootcamp da DIO. O foco foi a estruturação semântica e a estilização fiel ao protótipo proposto.",
+        "technologies": ["HTML5", "CSS3"],
+        "site_link": "#",
+        "code_link": "https://github.com/malucodes/Landing-Page-DIO.git"
     },
     {
-        "title": "Nome do Projeto 5",
-        "subtitle": "Descrição do projeto 5",
-        "image": "assets/images/malu-cafe.png",
-        "decoration": "assets/images/brilho-emoji.png"
+        "title": "Portfólio Pessoal",
+        "subtitle": "O projeto é um site portfólio pessoal desenvolvido com HTML, CSS e JavaScript para exibir projetos e habilidades. Ele utiliza um arquivo JSON para carregar os dados de forma dinâmica.",
+        "image": "assets/images/foto-portfolio-malucodess.png",
+        "decoration": "assets/images/Orange-Heart-emoji.png",
+        "description": "Meu espaço pessoal na web. Desenvolvido para apresentar minha trajetória, skills e projetos. Conta com carregamento dinâmico de conteúdo via JSON e animações interativas.",
+        "technologies": ["HTML5", "CSS3", "JavaScript", "Git / Github"],
+        "site_link": "#",
+        "code_link": "https://github.com/malucodes/malucodess.git"
     },
     {
-        "title": "Nome do Projeto 6",
-        "subtitle": "Descrição do projeto 6",
-        "image": "assets/images/malu-cafe.png",
-        "decoration": "assets/images/brilho-emoji.png"
+        "title": "Layout Responssivo Discord",
+        "subtitle": "Em produção...",
+        "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "decoration": "assets/images/Soon-emoji.png",
+        "description": "Recriação da interface do Discord com foco total em responsividade e adaptação para diferentes tamanhos de tela.",
+        "technologies": ["CSS3", "HTML5"],
+        "site_link": "#",
+        "code_link": "https://github.com/malucodes/Layout-Discord-Responsivo.git"
     },
     {
-        "title": "Nome do Projeto 7",
-        "subtitle": "Descrição do projeto 7",
-        "image": "assets/images/malu-cafe.png",
-        "decoration": "assets/images/brilho-emoji.png"
+        "title": "Youtube Clone",
+        "subtitle": "Em produção...",
+        "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "decoration": "assets/images/Soon-emoji.png",
+        "description": "Clone da interface do YouTube, implementando grid layout complexo e componentes interativos.",
+        "technologies": ["JavaScript", "CSS3"],
+        "site_link": "#",
+        "code_link": "https://github.com/malucodes/Youtube-Clone.git"
     },
     {
-        "title": "Nome do Projeto 8",
-        "subtitle": "Descrição do projeto 8",
-        "image": "assets/images/malu-cafe.png",
-        "decoration": "assets/images/brilho-emoji.png"
+        "title": "Classifificador Nível de Heroi",
+        "subtitle": "Em produção...",
+        "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "decoration": "assets/images/Soon-emoji.png",
+        "description": "Um desafio de lógica de programação para classificar heróis com base em sua experiência (XP).",
+        "technologies": ["JavaScript", "Lógica"],
+        "site_link": "#",
+        "code_link": "https://github.com/malucodes/Classificador-Nivel-de-Heroi.git"
     },
     {
-        "title": "Nome do Projeto 9",
-        "subtitle": "Descrição do projeto 9",
-        "image": "assets/images/malu-cafe.png",
-        "decoration": "assets/images/brilho-emoji.png"
+        "title": "Pokedex",
+        "subtitle": "Em produção...",
+        "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "decoration": "assets/images/Soon-emoji.png",
+        "description": "Consumo da PokéAPI para criar uma Pokédex interativa, listando Pokémons e seus detalhes.",
+        "technologies": ["JavaScript", "API", "HTML5"],
+        "site_link": "#",
+        "code_link": "https://github.com/malucodes/Pokedex.git"
+    },
+    {
+        "title": "Yu-Gi-Oh! Jogo Interativo",
+        "subtitle": "Em produção...",
+        "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "decoration": "assets/images/Soon-emoji.png",
+        "description": "Um mini-game de cartas inspirado em Yu-Gi-Oh!, focado em manipulação de estado e lógica de jogo.",
+        "technologies": ["JavaScript", "CSS3"],
+        "site_link": "#",
+        "code_link": "https://github.com/malucodes/Yu-Gi-Oh-Jogo-Interativo.git"
     }
 ]
