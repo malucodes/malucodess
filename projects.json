@@ -33,7 +33,7 @@
         "title": "Landing Page DIO",
         "subtitle": "Este projeto é uma landing page moderna da Digital Innovation One (DIO). Aplica-se conceitos fundamentais de front-end para criar uma interface responsiva e atraente.",
         "image": "assets/images/malu-cafe.png",
-        "decoration": "assets/images/Closed-book-emoji.png",
+        "decoration": "assets/images/Closed-Book-emoji.png",
         "description": "Landing page desenvolvida como parte do bootcamp da DIO. O foco foi a estruturação semântica e a estilização fiel ao protótipo proposto.",
         "technologies": ["HTML5", "CSS3"],
         "site_link": "#",
