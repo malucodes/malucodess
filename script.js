@@ -1,14 +1,45 @@
-// Verifica se estamos na página inicial antes de rodar lógica de scroll/nav
 if (document.querySelector('nav')) {
 let lastScrollTop = 0;
 const nav = document.querySelector('nav');
 
+const hamburger = document.createElement('button');
+hamburger.classList.add('hamburger');
+hamburger.setAttribute('aria-label', 'Abrir menu de navegação');
+hamburger.setAttribute('aria-expanded', 'false');
+hamburger.innerHTML = `
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+`;
+nav.appendChild(hamburger);
+
+const navMenu = nav.querySelector('ul');
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    const isActive = hamburger.classList.contains('active');
+    hamburger.setAttribute('aria-expanded', isActive);
+    hamburger.setAttribute('aria-label', isActive ? 'Fechar menu de navegação' : 'Abrir menu de navegação');
+    navMenu.classList.toggle('active');
+    document.body.classList.toggle('no-scroll');
+});
+
+nav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        hamburger.setAttribute('aria-expanded', 'false');
+        hamburger.setAttribute('aria-label', 'Abrir menu de navegação');
+        navMenu.classList.remove('active');
+        document.body.classList.remove('no-scroll');
+    });
+});
+
 window.addEventListener('scroll', function() {
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     if (scrollTop > lastScrollTop && scrollTop > nav.offsetHeight) {
-        nav.classList.add('hide-nav'); // Rolar para baixo -> esconde
+        nav.classList.add('hide-nav');
     } else {
-        nav.classList.remove('hide-nav'); // Rolar para cima -> mostra
+        nav.classList.remove('hide-nav');
     }
 
     if (scrollTop > 0) {
@@ -21,18 +52,17 @@ window.addEventListener('scroll', function() {
 });
 }
 
-// Carregar Projetos do JSON
 fetch('projects.json')
     .then(response => response.json())
     .then(data => {
         const container = document.getElementById('projects-list');
-        if (container) { // Só executa na home
+        if (container) {
         data.forEach((project, index) => {
             const card = document.createElement('div');
             card.classList.add('project-card');
 
             card.innerHTML = `
-                <img src="${project.decoration}" class="corner-decoration" alt="Decoração">
+                <img src="${project.decoration}" class="corner-decoration" alt="">
                 <h3>${project.title}</h3>
                 <h4>${project.subtitle}</h4>
                 <img src="${project.image}" class="project-image" alt="${project.title}">
@@ -48,7 +78,6 @@ fetch('projects.json')
         });
         }
 
-        // Lógica para a página de detalhes do projeto
         const projectImg = document.getElementById('project-img');
         if (projectImg) {
             const urlParams = new URLSearchParams(window.location.search);
@@ -58,7 +87,6 @@ fetch('projects.json')
                 const project = data[projectId];
                 const currentId = parseInt(projectId);
 
-                // Navegação por setas do teclado
                 document.addEventListener('keydown', (e) => {
                     if (e.key === 'ArrowLeft') {
                         const prevId = currentId > 0 ? currentId - 1 : data.length - 1;
@@ -69,7 +97,6 @@ fetch('projects.json')
                     }
                 });
 
-                // Navegação por clique nas setas visuais
                 const prevBtn = document.getElementById('prev-project');
                 const nextBtn = document.getElementById('next-project');
 
@@ -87,13 +114,10 @@ fetch('projects.json')
                     });
                 }
 
-                // Preencher Imagens
                 document.getElementById('project-img').src = project.image;
                 document.getElementById('project-decoration').src = project.decoration;
 
-                // Preencher Tecnologias
                 const techList = document.getElementById('tech-list');
-                // Mapa de cores simples baseado no info_cards.json
                 const colorMap = {
                     "HTML5": "#F78012", "CSS3": "#D5DD3F", "JavaScript": "#F8C400",
                     "Git / Github": "#000000", "Figma": "#F78012", "React": "#61DAFB",
@@ -102,7 +126,7 @@ fetch('projects.json')
                 
                 if (project.technologies) {
                     project.technologies.forEach(tech => {
-                        const color = colorMap[tech] || "#000"; // Cor padrão se não achar
+                        const color = colorMap[tech] || "#000";
                         const tag = document.createElement('div');
                         tag.classList.add('topic-tag');
                         tag.style.borderColor = color;
@@ -112,7 +136,6 @@ fetch('projects.json')
                     });
                 }
 
-                // Preencher Card da Direita
                 const cardContainer = document.getElementById('project-card-container');
                 cardContainer.innerHTML = `
                     <div class="project-info-header">
@@ -133,8 +156,7 @@ fetch('projects.json')
     })
     .catch(error => console.error('Erro ao carregar projetos:', error));
 
-// Carregar Info Cards (Skills) do JSON
-if (document.querySelector('.container-main')) { // Só executa na home
+if (document.querySelector('.container-main')) {
 fetch('info_cards.json')
     .then(response => response.json())
     .then(data => {
@@ -145,42 +167,53 @@ fetch('info_cards.json')
         data.forEach(cardData => {
             const card = document.createElement('div');
             card.classList.add('info-card');
+            card.setAttribute('tabindex', '0');
+            card.setAttribute('role', 'button');
+            card.setAttribute('aria-expanded', 'false');
+            card.setAttribute('aria-label', `Ver detalhes de ${cardData.title}`);
 
-            // Criar HTML dos tópicos
             const topicsHtml = cardData.topics.map(topic => 
                 `<div class="topic-tag" style="border-color: ${topic.color}; color: ${topic.color}">${topic.text}</div>`
             ).join('');
 
             card.innerHTML = `
-                <img src="${cardData.icon}" class="info-card-icon" alt="Ícone">
+                <img src="${cardData.icon}" class="info-card-icon" alt="">
                 <h3 class="info-card-title">${cardData.title}</h3>
-                <img src="${cardData.action_icon}" class="info-card-action" alt="Expandir">
+                <img src="${cardData.action_icon}" class="info-card-action" alt="">
                 <div class="info-topics-container">
                     ${topicsHtml}
                 </div>
             `;
 
-            // Evento de clique para expandir
-            card.addEventListener('click', () => {
-                // Fecha outros cards se necessário (opcional, removi para permitir múltiplos abertos)
-                // card.classList.toggle('expanded');
-                
-                // Lógica solicitada: clica estica, clica volta
+            const toggleCard = () => {
                 card.classList.toggle('expanded');
+                const isExpanded = card.classList.contains('expanded');
+                card.setAttribute('aria-expanded', isExpanded);
 
-                // Mover título Contato
                 const contato = document.getElementById('contato');
                 const bastidores = document.querySelector('.bastidores-container');
                 const footer = document.querySelector('footer');
+                const form = document.querySelector('.contact-form-container');
                 const hasExpandedCard = document.querySelector('.info-card.expanded');
                 if (hasExpandedCard) {
                     contato.classList.add('moved-down');
                     if (bastidores) bastidores.classList.add('moved-down');
                     if (footer) footer.classList.add('moved-down');
+                    if (form) form.classList.add('moved-down');
                 } else {
                     contato.classList.remove('moved-down');
                     if (bastidores) bastidores.classList.remove('moved-down');
                     if (footer) footer.classList.remove('moved-down');
+                    if (form) form.classList.remove('moved-down');
+                }
+            };
+
+            card.addEventListener('click', toggleCard);
+
+            card.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    toggleCard();
                 }
             });
 
@@ -190,4 +223,42 @@ fetch('info_cards.json')
         mainContainer.appendChild(infoContainer);
     })
     .catch(error => console.error('Erro ao carregar info cards:', error));
+}
+
+const contactForm = document.getElementById('contact-form');
+if (contactForm) {
+    contactForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const status = document.getElementById('form-status');
+        const btn = contactForm.querySelector('button');
+        
+        const originalBtnText = btn.innerText;
+        btn.innerText = 'Enviando...';
+        btn.disabled = true;
+
+        try {
+            const response = await fetch(e.target.action, {
+                method: 'POST',
+                body: new FormData(e.target),
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+
+            if (response.ok) {
+                status.innerHTML = "Mensagem enviada com sucesso! 🚀";
+                status.style.color = "green";
+                contactForm.reset();
+            } else {
+                status.innerHTML = "Ops! Houve um erro ao enviar.";
+                status.style.color = "red";
+            }
+        } catch (error) {
+            status.innerHTML = "Erro de conexão. Tente novamente.";
+            status.style.color = "red";
+        } finally {
+            btn.innerText = originalBtnText;
+            btn.disabled = false;
+        }
+    });
 }
