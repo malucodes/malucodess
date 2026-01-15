@@ -15,7 +15,7 @@
         "image": "assets/images/foto-make4you.png",
         "decoration": "assets/images/lipstick-emoji.png",
         "description": "E-commerce fictício focado em cosméticos de alta performance. O projeto explora conceitos de design responsivo, grid layout e uma estética moderna para destacar os produtos e a identidade da marca.",
-        "technologies": ["Figma", "HTML5", "CSS3"],
+        "technologies": ["HTML5", "CSS3", "JavaScript"],
         "site_link": "https://malucodes.github.io/Make4You-Cosmeticos/",
         "code_link": "https://github.com/malucodes/Make4You-Cosmeticos.git"
     },
@@ -45,7 +45,7 @@
         "image": "assets/images/foto-portfolio-malucodess.png",
         "decoration": "assets/images/Orange-Heart-emoji.png",
         "description": "Meu espaço pessoal na web. Desenvolvido para apresentar minha trajetória, skills e projetos. Conta com carregamento dinâmico de conteúdo via JSON e animações interativas.",
-        "technologies": ["HTML5", "CSS3", "JavaScript", "Git / Github"],
+        "technologies": ["HTML5", "CSS3", "JavaScript", "Figma"],
         "site_link": "http://http://malucodess.com.br/",
         "code_link": "https://github.com/malucodes/malucodess.git"
     },
@@ -55,7 +55,7 @@
         "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
         "decoration": "assets/images/Soon-emoji.png",
         "description": "Recriação da interface do Discord com foco total em responsividade e adaptação para diferentes tamanhos de tela.",
-        "technologies": ["CSS3", "HTML5"],
+        "technologies": [],
         "site_link": "#",
         "code_link": "https://github.com/malucodes/Layout-Discord-Responsivo.git"
     },
