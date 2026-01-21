@@ -1,5 +1,15 @@
 [
     {
+        "title": "Youtube 2010 Clone",
+        "subtitle": "Uma viagem nostálgica à interface clássica do YouTube de 2010, recriando o design icônico da época.",
+        "image": "assets/images/youtube-clone.png",
+        "decoration": "assets/images/television-emoji.png",
+        "description": "Este projeto é uma réplica detalhada do layout do YouTube de 2010. Utilizando JavaScript e CSS3, ele resgata elementos visuais marcantes como o antigo sistema de classificação e a organização de conteúdo que definiu uma geração de consumo de vídeo online.",
+        "technologies": ["JavaScript", "JSON", "API", "HTML5", "CSS3"],
+        "site_link": "https://malucodes.github.io/Youtube-Clone/",
+        "code_link": "https://github.com/malucodes/Youtube-Clone.git"
+    },
+    {
         "title": "SOS Cidadão Digital",
         "subtitle": "Seu propósito é transformar o pânico das crises online em solução imediata. O projeto utiliza o modelo de busca e cards para fornecer Protocolos de Ação Críticos.",
         "image": "assets/images/foto-sos-cidadao-digital.png",
@@ -8,16 +18,6 @@
         "technologies": ["HTML5", "CSS3", "JavaScript", "IA Generativa"],
         "site_link": "https://malucodes.github.io/SOS-Cidadao-Digital/",
         "code_link": "https://github.com/malucodes/SOS-Cidadao-Digital.git"
-    },
-    {
-        "title": "Make4You Cosméticos",
-        "subtitle": "Inspirados pela crença de que a verdadeira elegância reside na confiança e autenticidade, a marca fictícia Make4You cria cosméticos de alta performance.",
-        "image": "assets/images/foto-make4you.png",
-        "decoration": "assets/images/lipstick-emoji.png",
-        "description": "E-commerce fictício focado em cosméticos de alta performance. O projeto explora conceitos de design responsivo, grid layout e uma estética moderna para destacar os produtos e a identidade da marca.",
-        "technologies": ["HTML5", "CSS3", "JavaScript"],
-        "site_link": "https://malucodes.github.io/Make4You-Cosmeticos/",
-        "code_link": "https://github.com/malucodes/Make4You-Cosmeticos.git"
     },
     {
         "title": "Wikipedia 2004 Clone",
@@ -30,14 +30,14 @@
         "code_link": "https://github.com/malucodes/Wikipedia-Clone.git"
     },
     {
-        "title": "Landing Page DIO",
-        "subtitle": "Este projeto é uma landing page moderna da Digital Innovation One (DIO). Aplica-se conceitos fundamentais de front-end para criar uma interface responsiva e atraente.",
-        "image": "assets/images/malu-cafe.png",
-        "decoration": "assets/images/Closed-Book-emoji.png",
-        "description": "Landing page desenvolvida como parte do bootcamp da DIO. O foco foi a estruturação semântica e a estilização fiel ao protótipo proposto.",
-        "technologies": ["HTML5", "CSS3"],
-        "site_link": "#",
-        "code_link": "https://github.com/malucodes/Landing-Page-DIO.git"
+        "title": "Make4You Cosméticos",
+        "subtitle": "Inspirados pela crença de que a verdadeira elegância reside na confiança e autenticidade, a marca fictícia Make4You cria cosméticos de alta performance.",
+        "image": "assets/images/foto-make4you.png",
+        "decoration": "assets/images/lipstick-emoji.png",
+        "description": "E-commerce fictício focado em cosméticos de alta performance. O projeto explora conceitos de design responsivo, grid layout e uma estética moderna para destacar os produtos e a identidade da marca.",
+        "technologies": ["HTML5", "CSS3", "JavaScript"],
+        "site_link": "https://malucodes.github.io/Make4You-Cosmeticos/",
+        "code_link": "https://github.com/malucodes/Make4You-Cosmeticos.git"
     },
     {
         "title": "Portfólio Pessoal",
@@ -50,6 +50,16 @@
         "code_link": "https://github.com/malucodes/malucodess.git"
     },
     {
+        "title": "Landing Page DIO",
+        "subtitle": "Este projeto é uma landing page moderna da Digital Innovation One (DIO). Aplica-se conceitos fundamentais de front-end para criar uma interface responsiva e atraente.",
+        "image": "assets/images/malu-cafe.png",
+        "decoration": "assets/images/Closed-Book-emoji.png",
+        "description": "Landing page desenvolvida como parte do bootcamp da DIO. O foco foi a estruturação semântica e a estilização fiel ao protótipo proposto.",
+        "technologies": ["HTML5", "CSS3"],
+        "site_link": "#",
+        "code_link": "https://github.com/malucodes/Landing-Page-DIO.git"
+    },
+    {
         "title": "Layout Responssivo Discord",
         "subtitle": "Em produção...",
         "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
@@ -59,16 +69,7 @@
         "site_link": "#",
         "code_link": "https://github.com/malucodes/Layout-Discord-Responsivo.git"
     },
-    {
-        "title": "Youtube Clone",
-        "subtitle": "Em produção...",
-        "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        "decoration": "assets/images/Soon-emoji.png",
-        "description": "Clone da interface do YouTube, implementando grid layout complexo e componentes interativos.",
-        "technologies": ["JavaScript", "CSS3"],
-        "site_link": "#",
-        "code_link": "https://github.com/malucodes/Youtube-Clone.git"
-    },
+    
     {
         "title": "Classifificador Nível de Heroi",
         "subtitle": "Em produção...",
