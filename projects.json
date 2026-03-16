@@ -1,6 +1,16 @@
 [
     {
-        "title": "Youtube 2010 Clone",
+        "title": "Orkut",
+        "subtitle": "Este projeto recria o visual e a sensação da rede social que foi um fenômeno no Brasil.",
+        "image": "assets/images/orkut-foto.png",
+        "decoration": "assets/images/Globe-emoji.png",
+        "description": "Mergulhe na nostalgia com esta recriação do Orkut. O projeto foca em replicar a experiência do usuário da época, desde a organização dos amigos e comunidades até a caixa de depoimentos. Feito com HTML e CSS para garantir a fidelidade visual que cativou uma geração.",
+        "technologies": ["HTML5", "CSS3", "JavaScript"],
+        "site_link": "https://malucodes.github.io/Orkut-Clone/",
+        "code_link": "https://github.com/malucodes/Orkut-Clone.git"
+    },
+    {
+        "title": "Youtube 2010",
         "subtitle": "Uma viagem nostálgica à interface clássica do YouTube de 2010, recriando o design icônico da época.",
         "image": "assets/images/youtube-clone.png",
         "decoration": "assets/images/television-emoji.png",
@@ -20,7 +30,7 @@
         "code_link": "https://github.com/malucodes/SOS-Cidadao-Digital.git"
     },
     {
-        "title": "Wikipedia 2004 Clone",
+        "title": "Wikipedia 2004",
         "subtitle": "Este projeto é uma recriação nostálgica do layout clássico da Wikipédia utilizado por volta de 2004, resgatando a estética minimalista da \"Web 1.0\".",
         "image": "assets/images/foto-wikipedia.png",
         "decoration": "assets/images/Globe-emoji.png",
@@ -58,46 +68,5 @@
         "technologies": ["HTML5", "CSS3"],
         "site_link": "#",
         "code_link": "https://github.com/malucodes/Landing-Page-DIO.git"
-    },
-    {
-        "title": "Layout Responssivo Discord",
-        "subtitle": "Em produção...",
-        "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        "decoration": "assets/images/Soon-emoji.png",
-        "description": "Recriação da interface do Discord com foco total em responsividade e adaptação para diferentes tamanhos de tela.",
-        "technologies": [],
-        "site_link": "#",
-        "code_link": "https://github.com/malucodes/Layout-Discord-Responsivo.git"
-    },
-    
-    {
-        "title": "Classifificador Nível de Heroi",
-        "subtitle": "Em produção...",
-        "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        "decoration": "assets/images/Soon-emoji.png",
-        "description": "Um desafio de lógica de programação para classificar heróis com base em sua experiência (XP).",
-        "technologies": ["JavaScript", "Lógica"],
-        "site_link": "#",
-        "code_link": "https://github.com/malucodes/Classificador-Nivel-de-Heroi.git"
-    },
-    {
-        "title": "Pokedex",
-        "subtitle": "Em produção...",
-        "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        "decoration": "assets/images/Soon-emoji.png",
-        "description": "Consumo da PokéAPI para criar uma Pokédex interativa, listando Pokémons e seus detalhes.",
-        "technologies": ["JavaScript", "API", "HTML5"],
-        "site_link": "#",
-        "code_link": "https://github.com/malucodes/Pokedex.git"
-    },
-    {
-        "title": "Yu-Gi-Oh! Jogo Interativo",
-        "subtitle": "Em produção...",
-        "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        "decoration": "assets/images/Soon-emoji.png",
-        "description": "Um mini-game de cartas inspirado em Yu-Gi-Oh!, focado em manipulação de estado e lógica de jogo.",
-        "technologies": ["JavaScript", "CSS3"],
-        "site_link": "#",
-        "code_link": "https://github.com/malucodes/Yu-Gi-Oh-Jogo-Interativo.git"
     }
 ]
