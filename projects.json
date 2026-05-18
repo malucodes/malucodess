@@ -2,7 +2,7 @@
     {
         "title": "Sistema de Alunos",
         "subtitle": "Um sistema de gerenciamento acadêmico desenvolvido em C para controle de estudantes.",
-        "image": "assets/images/orkut-foto.png",
+        "image": "assets/images/sistema-alunos.png",
         "decoration": "assets/images/graduation-cap.svg",
         "description": "Projeto focado em estruturar um sistema acadêmico via terminal. Desenvolvido na linguagem C, a aplicação permite cadastrar alunos, gerenciar notas e administrar dados escolares, aplicando na prática conceitos de programação estruturada, alocação de memória e manipulação de arquivos.",
         "technologies": ["C"],
