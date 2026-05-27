@@ -1,5 +1,15 @@
 [
     {
+        "title": "CiberJardim",
+        "subtitle": "Uma aplicação web Full-Stack que transforma a gestão de tarefas em uma experiência lúdica, visual e gamificada.",
+        "image": "assets/images/jardim-gestor.png",
+        "decoration": "assets/images/seedling.svg",
+        "description": "Construído com React no Front-end e Python com FastAPI no Back-end, ele permite gerenciar projetos em uma interface gamificada. O sistema conta com banco de dados MySQL em nuvem (TiDB) e sincronização bidirecional com a API do Google Tasks, garantindo que o plantio e a poda das atividades sejam refletidos em tempo real na sua agenda.",
+        "technologies": ["React", "Python", "FastAPI", "Google Tasks API", "MySQL", "TiDB", "JavaScript", "CSS3"],
+        "site_link": "https://ciberjardim.vercel.app/",
+        "code_link": "https://github.com/malucodes/Jardim-Gestor.git"
+    },
+    {
         "title": "Sistema de Alunos",
         "subtitle": "Um sistema de gerenciamento acadêmico desenvolvido em C para controle de estudantes.",
         "image": "assets/images/sistema-alunos.png",
@@ -8,16 +18,6 @@
         "technologies": ["C"],
         "site_link": "https://github.com/malucodes/Sistema_de_Alunos/blob/master/main.c",
         "code_link": "https://github.com/malucodes/Sistema_de_Alunos.git"
-    },
-    {
-        "title": "Jardim do Conhecimento",
-        "subtitle": "Um gestor de atividades em linha de comando (CLI) que transforma sua organização em um jardim virtual metafórico e relaxante.",
-        "image": "assets/images/jardim-gestor.png",
-        "decoration": "assets/images/seedling.svg",
-        "description": "Escrito em Python, o Jardim transforma a organização de tarefas em uma experiência lúdica. Neste gestor de linha de comando (CLI), cada projeto é uma semente plantada em um jardim virtual. O seu progresso é visualizado como o crescimento de uma planta, que ganha folhas e floresce até a colheita, trazendo leveza e recompensando a dedicação na sua produtividade.",
-        "technologies": ["Python"],
-        "site_link": "https://github.com/malucodes/Jardim-Gestor/blob/master/main.py",
-        "code_link": "https://github.com/malucodes/Jardim-Gestor.git"
     },
     {
         "title": "Certification Badge README",

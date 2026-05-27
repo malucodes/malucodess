@@ -6,7 +6,8 @@
         "topics": [
             {"text": "Python", "color": "#F78012"},
             {"text": "C", "color": "#F78012"},
-            {"text": "SQL", "color": "#F78012"},
+            {"text": "MySQL", "color": "#F78012"},
+            {"text": "React", "color": "#F78012"},
             {"text": "JavaScript", "color": "#F78012"},
             {"text": "Git / Github", "color": "#F78012"},
             {"text": "HTML5", "color": "#F78012"},
