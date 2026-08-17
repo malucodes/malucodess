@@ -1,9 +1,29 @@
 [
     {
-        "title": "Sistema de Financiamento de Imóveis",
+        "title": "Momentum Punch Robot",
         "subtitle": "-",
         "image": "",
-        "decoration": "",
+        "decoration": "assets/images/Boxing-Glove-emoji.svg",
+        "description": "-",
+        "technologies": ["Java"],
+        "site_link": "",
+        "code_link": "https://github.com/malucodes/chatbot-assistente-atendimento.git"
+    },
+    {
+        "title": "ChatBot Assistente Virtual",
+        "subtitle": "-",
+        "image": "",
+        "decoration": "assets/images/Robot-emoji.svg",
+        "description": "-",
+        "technologies": ["Java"],
+        "site_link": "",
+        "code_link": "https://github.com/malucodes/chatbot-assistente-atendimento.git"
+    },
+    {
+        "title": "FinanciAI",
+        "subtitle": "-",
+        "image": "assets/images/financiai-foto.png",
+        "decoration": "assets/images/Money-Bag-emoji.svg",
         "description": "-",
         "technologies": ["Java"],
         "site_link": "",
@@ -88,6 +108,16 @@
         "technologies": ["HTML5", "CSS3", "JavaScript"],
         "site_link": "https://malucodes.github.io/Make4You-Cosmeticos/",
         "code_link": "https://github.com/malucodes/Make4You-Cosmeticos.git"
+    },
+    {
+        "title": "Pioneiras Do Código",
+        "subtitle": "-",
+        "image": "assets/images/pioneiras-foto.png",
+        "decoration": "assets/images/Rocket-emoji.svg",
+        "description": "-",
+        "technologies": ["Java"],
+        "site_link": "",
+        "code_link": "https://github.com/malucodes/Pioneiras-Do-Codigo.git"
     },
     {
         "title": "Portfólio Pessoal",

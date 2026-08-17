@@ -145,7 +145,7 @@
  }
 
  .card-menu{
-  	width: 450px;
+  	width: 600px;
   	height: 320px;
   	box-shadow: 0px 0px 11px 2px rgba(0, 0, 0, 0.25);
   	border-radius: 50px;
@@ -162,21 +162,21 @@ font-weight: 500;
 font-size: 18px;;
 color: var(--color-black);
 text-align: left;
-padding: 0 40px;
+padding: 60px 40px;
 }
 
 .card-icon {
     position: absolute;
     padding: 0;
     left: -35px;
-    top: -40px;
+    top: -50px;
     width: 120px;
 }
 
 .rotated-text {
     position: absolute;
     top: -15px;
-    left: 140px;
+    left: 250px;
     transform: rotate(-5.89deg);
     color: var(--color-black);
     font-weight: 700;
@@ -930,7 +930,7 @@ footer.moved-down {
         left: 50% !important;
         transform: translateX(-50%) !important;
         width: auto;
-        max-width: 90%;
+        max-width: 100%;
         text-align: center;
         font-size: 20px;
     }
