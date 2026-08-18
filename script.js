@@ -120,13 +120,23 @@ fetch('projects.json')
                 const techList = document.getElementById('tech-list');
                 const colorMap = {
                     "HTML5": "#F78012", "CSS3": "#D5DD3F", "JavaScript": "#F8C400",
-                    "Git / Github": "#000000", "Figma": "#F78012", "React": "#61DAFB",
-                    "Node.js": "#339933", "Python": "#3776AB", "SQL": "#003B57"
+                    "Figma": "#F78012", "React": "#61DAFB", "Node.js": "#339933",
+                    "Python": "#3776AB", "SQL": "#003B57", "MySQL": "#4479A1",
+                    "n8n": "#1A82E2", "FastAPI": "#009688", "C": "#A8B9CC",
+                    "PyTorch": "#EE4C2C", "NumPy": "#4D77CF", "Pandas": "#130654",
+                    "IA Generativa": "#8E44AD"
                 };
+
+                const fallbackColors = [
+                    "#4285F4", "#DB4437", "#0F9D58", "#4A148C", "#FF6F00", 
+                    "#00ACC1", "#C51162", "#5D4037"
+                ];
+                
+                let colorIndex = 0;
                 
                 if (project.technologies) {
                     project.technologies.forEach(tech => {
-                        const color = colorMap[tech] || "#000";
+                        const color = colorMap[tech] || fallbackColors[colorIndex++ % fallbackColors.length];
                         const tag = document.createElement('div');
                         tag.classList.add('topic-tag');
                         tag.style.borderColor = color;

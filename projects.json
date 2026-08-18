@@ -1,21 +1,21 @@
 [
     {
-        "title": "Momentum Punch Robot",
-        "subtitle": "-",
+        "title": "Momentum Punch",
+        "subtitle": "Estratégia quantitativa que une IA e análise macroeconômica para otimizar o retorno e a proteção de uma carteira de investimentos.",
         "image": "",
         "decoration": "assets/images/Boxing-Glove-emoji.svg",
-        "description": "-",
-        "technologies": ["Java"],
+        "description": "Este projeto é um modelo quantitativo desenvolvido para o Desafio Itaú Asset QuantAI. A estratégia, orientada por regimes de volatilidade, une inteligência artificial (LLM Qwen2.5) e análise macroeconômica para otimizar o retorno e a proteção de uma carteira de ETFs. O modelo reage dinamicamente aos cenários econômicos e ao noticiário corporativo, com rebalanceamento semanal e posições long-only. Em backtest (399 pregões), alcançou 51,60% de retorno total, Sharpe de 1,01 e Max Drawdown de -7,51%. O acesso ao repositório é restrito.",
+        "technologies": ["Qwen2.5 3B", "Ollama", "JSON", "Python", "NumPy", "Pandas", "CVXPY", "Feedparser", "Requests", "PRAW", "BeautifulSoup4", "python-bcb", "yfinance", "Statsmodels", "SciPy", "Transformers", "PyTorch", "JavaScript", "HTML5", "CSS3", "Figma"],
         "site_link": "",
-        "code_link": "https://github.com/malucodes/chatbot-assistente-atendimento.git"
+        "code_link": ""
     },
     {
         "title": "ChatBot Assistente Virtual",
-        "subtitle": "-",
+        "subtitle": "Chatbot escalável com consultas em tempo real via API REST e validações em banco de dados MySQL.",
         "image": "",
         "decoration": "assets/images/Robot-emoji.svg",
-        "description": "-",
-        "technologies": ["Java"],
+        "description": "Este projeto é um chatbot escalável desenvolvido no n8n, focado na experiência do usuário (UX) e integridade de dados. Ele realiza consultas em tempo real via API REST e validações em banco de dados MySQL para automatizar o atendimento. A arquitetura stateless garante alta performance, enquanto fluxos de contingência (fallback) tratam falhas em APIs externas. O sistema também utiliza SQL para monitoramento e identificação de gargalos.",
+        "technologies": ["n8n", "MySQL", "REST API", "JavaScript"],
         "site_link": "",
         "code_link": "https://github.com/malucodes/chatbot-assistente-atendimento.git"
     },
