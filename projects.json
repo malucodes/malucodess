@@ -2,7 +2,7 @@
     {
         "title": "Momentum Punch",
         "subtitle": "Estratégia quantitativa que une IA e análise macroeconômica para otimizar o retorno e a proteção de uma carteira de investimentos.",
-        "image": "",
+        "image": "assets/images/momentum-foto.png",
         "decoration": "assets/images/Boxing-Glove-emoji.svg",
         "description": "Este projeto é um modelo quantitativo desenvolvido para o Desafio Itaú Asset QuantAI. A estratégia, orientada por regimes de volatilidade, une inteligência artificial (LLM Qwen2.5) e análise macroeconômica para otimizar o retorno e a proteção de uma carteira de ETFs. O modelo reage dinamicamente aos cenários econômicos e ao noticiário corporativo, com rebalanceamento semanal e posições long-only. Em backtest (399 pregões), alcançou 51,60% de retorno total, Sharpe de 1,01 e Max Drawdown de -7,51%. O acesso ao repositório é restrito.",
         "technologies": ["Qwen2.5 3B", "Ollama", "JSON", "Python", "NumPy", "Pandas", "CVXPY", "Feedparser", "Requests", "PRAW", "BeautifulSoup4", "python-bcb", "yfinance", "Statsmodels", "SciPy", "Transformers", "PyTorch", "JavaScript", "HTML5", "CSS3", "Figma"],
