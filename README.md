@@ -4,7 +4,7 @@ Bem-vindo (a) ao repositório do meu portfólio! Este projeto é o meu espaço c
 
 Aqui, você encontrará meus projetos de desenvolvimento front-end, minhas explorações com Inteligência Artificial e automação, além de links para os conteúdos que crio para a comunidade tech.
 
-⊹ **Acesse o site ao vivo:** [malucodess](https://malucodes.github.io/malucodess/)
+⊹ **Acesse o site ao vivo:** [malucodess](https://malucodes.vercel.app/)
 
 ---
 
